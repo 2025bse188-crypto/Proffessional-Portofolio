@@ -77,6 +77,7 @@ No build step or dependencies are required.
 - Responsive design that adapts to different screen sizes
 - Media gallery with images and video
 - Contact page
+- Tables and lists
 - Documented planning (sitemap and wireframes)
 
 ## Contact / Repository
