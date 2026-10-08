@@ -84,6 +84,3 @@ No build step or dependencies are required.
 - GitHub: [@2025bse188-crypto](https://github.com/2025bse188-crypto)
 - Institution: Mbarara University of Science and Technology (MUST)
 
-## License
-
-[Choose a license, e.g. MIT, or remove this section]
