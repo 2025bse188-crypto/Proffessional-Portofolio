@@ -2,7 +2,7 @@
 
 A personal portfolio website, together with its sitemap and wireframes. It presents who we are, what we can do, our work, and how to reach us.
 
-## Group Members (GROUP G)
+## Group Members ( GROUP G )
 
 | # | Name | Registration Number |
 | --- | --- | --- |
