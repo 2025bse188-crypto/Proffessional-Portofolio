@@ -1,6 +1,21 @@
 # Professional Portfolio
 
-A personal portfolio website, together with its sitemap and wireframes. It presents who I am, what I can do, my work, and how to reach me.
+A personal portfolio website, together with its sitemap and wireframes. It presents who we are, what we can do, our work, and how to reach us.
+
+## Group Members (GROUP G)
+
+| # | Name | Registration Number |
+| --- | --- | --- |
+| 1 | Aine Dickens | 2025/BSE/203/PS |
+| 2 | Musonirwa Ibrahim | 2025/BSE/218/PS |
+| 3 | Nkamushaba Saviour | 2025/BSE/136/PS |
+| 4 | Ayebazamukama Jastina | 2025/BSE/054/PS |
+| 5 | Mukiibi Jonathan Jeremiah | 2025/BSE/215/PS |
+| 6 | Taremwa Emmanuel | 2025/BSE/170/PS |
+| 7 | Murungi Collins | 2025/BSE/217/PS |
+| 8 | Kamukama Benjamin | 2025/BSE/079/PS |
+| 9 | Woripawere Joshua | 2025/BSE/188/PS |
+| 10 | Kabadiima Emmanuel | 2025/BSE/207/PS |
 
 ## Pages
 
@@ -64,24 +79,9 @@ No build step or dependencies are required.
 - Contact page
 - Documented planning (sitemap and wireframes)
 
-## Authors
+## Contact / Repository
 
-**Wori Emmanuel** (update to the name you want shown)
-
-
- GROUP G 2026
--AINE DICKENS 2025/BSE/203/PS
--MUSONIRWA IBRAHIM 2025/BSE/218/PS
--NKAMUSHABA SAVIOUR 2025/BSE/136/PS
--AYEBAZAMUKAMA JASTINA 2025/BSE/054/PS
--MUKIIBI JONATHAN JEREMIAH 2025/BSE/215/PS
--TAREMWA EMMANUEL 2025/BSE/170/PS
--MURUNGI COLLINS 2025/BSE/217/PS
--KAMUKAMA BENJAMIN 2025/BSE/079/PS
--WORIPAWERE JOSHUA 2025/BSE/188/PS
--KABADIIMA EMMANUEL 2025/BSE/207/PS
-
-
+- GitHub: [@2025bse188-crypto](https://github.com/2025bse188-crypto)
 - Institution: Mbarara University of Science and Technology (MUST)
 
 ## License
