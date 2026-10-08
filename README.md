@@ -28,9 +28,9 @@ https://2025bse188-crypto.github.io/Proffessional-Portofolio/
 | Page | File | Purpose |
 | --- | --- | --- |
 | Home | `index.html` | Landing page and introduction |
-| About | `About.html` | Background, education, and personal story |
+| About | `About.html` | Background, education, and concepts acquired |
 | Gallery | `gallery.html` | Visual showcase of work and moments |
-| Data | `data.html` | [Describe what this page shows] |
+| Data | `data.html` | Show the different skills and proficiency |
 | Contact | `contact.html` | Ways to get in touch |
 | Planning | `Portfolio sitemap and wireframes.html` | Sitemap and wireframes used to plan the site |
 
