@@ -40,7 +40,7 @@ Proffessional-Portofolio/
 
 - HTML5
 - CSS3
-- [Add JavaScript or any other tools you used]
+
 
 ## Getting Started
 
@@ -64,11 +64,24 @@ No build step or dependencies are required.
 - Contact page
 - Documented planning (sitemap and wireframes)
 
-## Author
+## Authors
 
 **Wori Emmanuel** (update to the name you want shown)
 
-- GitHub: [@2025bse188-crypto](https://github.com/2025bse188-crypto)
+
+ GROUP G 2026
+AINE DICKENS 2025/BSE/203/PS
+MUSONIRWA IBRAHIM 2025/BSE/218/PS
+NKAMUSHABA SAVIOUR 2025/BSE/136/PS
+AYEBAZAMUKAMA JASTINA 2025/BSE/054/PS
+MUKIIBI JONATHAN JEREMIAH 2025/BSE/215/PS
+TAREMWA EMMANUEL 2025/BSE/170/PS
+MURUNGI COLLINS 2025/BSE/217/PS
+KAMUKAMA BENJAMIN 2025/BSE/079/PS
+WORIPAWERE JOSHUA 2025/BSE/188/PS
+KABADIIMA EMMANUEL 2025/BSE/207/PS
+
+
 - Institution: Mbarara University of Science and Technology (MUST)
 
 ## License
