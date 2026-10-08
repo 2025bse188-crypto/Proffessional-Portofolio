@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wori Emmanuel | About</title>
+        <style>
+            /* Added: full-height flex layout keeps the footer at the page bottom. */
+            body {
+                min-height:100vh;
+                margin:0;
+                display:flex;
+                flex-direction:column;
+                background-color: wheat;
+                /* Added: soft gradient background. */
+                
+            }
+
+            body p,article,h2,.copy{
+                color:black;
+            }
+
+          
+
+            
+
+            footer a {
+                text-decoration: none;
+                color:green;
+            }
+
+           
+
+            footer {
+                display:flex;
+                flex-direction: column;
+                /* Added: push the footer down when content is short. */
+                margin-top:auto;
+                align-items:center;
+            }
+
+            /* Added: shared portfolio panels and responsive About layout. */
+            :root {
+                font-family:Arial,sans-serif;
+                color:#233142
+            }
+
+            * {
+                box-sizing:border-box
+            }
+
+            .site-header,footer {
+                background:transparent;
+                
+            }
+
+            .site-header {
+                margin:16px 2.5% 0;
+                padding:8px;
+                border-radius:8px
+            }
+
+            nav {
+                display:flex;
+                justify-content:center;
+                gap:8px;
+                flex-wrap:wrap
+            }
+
+            nav a {
+                padding:9px 20px;
+                
+                border-radius:18px;
+                color:#314454;
+                text-decoration:none;
+                text-align:center;
+                font-size:14px
+            }
+
+
+            main {
+                width:min(1100px,95%);
+                margin:0 auto;
+                padding:44px 0;
+                flex:1
+            }
+
+            .page-heading {
+                margin:0 0 26px;
+                font-size:2rem;
+                font-weight:600;
+                color:black;
+            }
+
+            .eyebrow {
+                color:#607687;
+                font-size:.78rem;
+                text-transform:uppercase
+            }
+
+            .about-layout {
+                display:grid;
+                grid-template-columns:minmax(0,1fr) 230px;
+                gap:28px
+            }
+
+            .timeline {
+                border-right:1px solid #aebcc3;
+                padding-right:26px
+            }
+
+            .timeline article {
+                border:0;
+                border-bottom:1px solid #d2dce0;
+                padding:14px 4px
+            }
+
+            .timeline h2,.project-list h2 {
+                font-size:1rem
+            }
+
+            .copy {
+                line-height:1.7;
+                color:rebeccapurple;
+                font-size: 12px;
+                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .project-list {
+                margin:0;
+                padding-left:20px;
+                line-height:2
+            }
+
+            .project-list article {
+                padding:6px 0
+            }
+
+            footer {
+                margin:0 2.5% 12px;
+                padding:10px 16px;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                gap:12px;
+                flex-wrap:wrap;
+                font-size:.8rem;
+                height: 10px;
+            }
+            .button{
+        padding: 10px 30px 10px 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border-width: 1px;
+        color: black;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+            footer p {
+                margin:0
+            }
+
+            footer nav a {
+                padding:2px;
+                border:0;
+                background:transparent;
+                color:#536574
+            }
+
+            @media(max-width:700px) {
+                .about-layout {
+                    grid-template-columns:1fr
+                }
+
+                .timeline {
+                    border-right:0;
+                    padding-right:0
+                }
+
+                .site-header {
+                    margin:8px 3% 0
+                }
+
+                main {
+                    padding:28px 0
+                }
+
+                footer {
+                    margin:0 3% 8px
+                }
+
+            }
+        </style>
+    </head>
+    <!-- Keep all visible page content inside the document body. -->
+    <body>
+    <Main>
+        <!-- Added: shared navigation marks the current About page. -->
+        <header class="site-header">
+            <nav aria-label="Main navigation">
+               
+                <a href="index.html"><button class="button">Home</button></a>
+                <a href="About.html"><button class="button">About</button></a>
+                <a href="data.html"><button class="button">Skills</button></a>
+                <a href="gallery.html"><button class="button">Gallery</button></a>
+                <a href="contact.html"><button class="button">Contact</button></a>
+            
+            </nav>
+        </header>
+        <!-- Added: timeline and project sidebar match the About wireframe. -->
+        <main>
+            <h1 class="page-heading">
+                About
+            </h1>
+            <section class="about-layout">
+                <section class="timeline" aria-label="Experience">
+                    <article>
+                        
+                        <h2>
+                            Professional certificate in AI web develompment
+                        </h2>
+                        <p class="copy">
+                            I focus on clear structure, accessible interactions, and responsive layouts that feel natural on every screen.
+                        </p>
+                    </article>
+                    <article>
+                        
+                        <h2>
+                            Professional certificate in software Engineering
+                        </h2>
+                        <p class="copy">
+                            I strengthen my skills through hands-on projects, careful iteration, and attention to the small details.
+                        </p>
+                    </article>
+                    <article>
+        
+                        <h2>
+                            Certificate in web development
+                        </h2>
+                        <p class="copy">
+                            I create useful digital experiences while growing as a developer with every project.
+                        </p>
+                    </article>
+                    <article>
+        
+                        <h2>
+                            Certificate in cloud computing
+                        </h2>
+                        <p class="copy">
+                            I build accessible, responsive, and inclusive web experiences that work for everyone.
+                        </p>
+                    </article>
+                </section>
+                <aside class="project-list">
+                    <h2>
+                        Projects
+                    </h2>
+                    <ul>
+                        <li>
+                            Trivago ecommerce website
+                        </li>
+                        <li>
+                            Jumia kenya ads 
+                        </li>
+                        <li>
+                             Trix School management system
+                        </li>
+                        <li>
+                             Watu healthcare website
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+        </main>
+        <!-- Added: compact footer mirrors the other portfolio pages. -->
+        <footer>
+            <p>
+                © 2026 Wori Emmanuel
+            </p>
+            <nav aria-label="Footer navigation">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="about.html">
+                    About
+                </a>
+                <a href="data.html">
+                    Skills
+                </a>
+                <a href="gallery.html">
+                    Gallery
+                </a>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </nav>
+        </footer>
+    </Main>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorinRmmanuel | Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            max-height:fit-content;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .box_page3 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-height:fit-content;
+            min-height: fit-content;
+            padding: 50px 5%;
+            background-color: wheat;
+        }
+        /* PAGE 3 CONTENT (Projects) */
+
+        #projects {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+            row-gap: 16px;
+        }
+
+        .box_page3_projects_Title {
+            display: flex;
+            align-items: center;
+            padding-right: 40px;
+        }
+
+        #box_page3_projects_Title {
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+
+        .box_page3_projects_container {
+            display: flex;
+            gap: 20px;
+            border-left: 10px solid white;
+            padding-left: clamp(16px, 4vw, 40px);
+            flex: 1 1 280px;
+            flex-wrap: wrap;
+            color:black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .box_page3_projects_1 {
+            flex: 2;
+        }
+
+        .prj_1 {
+            width: clamp(200px, 40vw, 400px);
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .prj_2{
+            
+            width: 50px;
+        }
+        .box_page3_projects23 {
+            flex: 1;
+            min-width: 140px;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        .box_page3_projects24 {
+            flex: 1;
+            min-width: 140px;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        .box_example-projects_slides_image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 0 2.5% 12px;
+            padding: 10px 16px;
+            font-size: 0.8rem;
+            height: auto;
+        }
+
+        footer p {
+            margin: 0;
+            color:black;
+        }
+
+        footer nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        footer nav a {
+            color:black;
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .button{
+        padding: 10px 30px 10px 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border-width: 1px;
+        color: black;
+        margin-bottom: 20px;
+    }
+    nav {
+                display:flex;
+                justify-content:center;
+                gap:8px;
+                flex-wrap:wrap;
+                margin-top: 5px;
+               
+            }
+
+            nav a {
+                padding:9px 20px;
+                border-radius:18px;
+                color:white;
+                text-decoration:none;
+                text-align:center;
+                font-size:14px
+            }
+    
+
+    </style>
+</head>
+<!-- Keep all visible page content inside the document body. -->
+<body>
+<main>
+<!--start of Screen1/page3-->
+
+    <section class="box_page3" id="page3">
+         <nav>
+                <a href="index.html"><button class="button">Home</button></a>
+                <a href="About.html"><button class="button">About</button></a>
+                <a href="data.html"><button class="button">Skills</button></a>
+                <a href="gallery.html"><button class="button">Gallery</button></a>
+                <a href="contact.html"><button class="button">Contact</button></a>
+         </nav>
+        <section id="box_example-projects_slides">
+            <section id="projects">
+<h1>Gallery</h1>
+                <section class="box_page3_projects_container">
+                    <section class="box_page3_projects_1">
+                        <video src="video/0_Dynamic_Opener_1280x720.mp4" autoplay muted loop class="prj_1" alt="Project">
+                        <caption><br>Project 1</caption>
+                    </section>
+                    <section class="box_page3_projects23">
+                        <img src="images/images.jfif" class="box_example-projects_slides_image" id="prj_2" alt="Project">
+                        <caption>Project 2</caption>
+                        <img src="images/nn.jfif" class="box_example-projects_slides_image" id="prj_3" alt="Project">
+                        <caption>Project 3</caption>
+                    </section>
+                    <section class="box_page3_projects24">
+                        <img src="images/wi-Fi_landing_page.png" class="box_example-projects_slides_image" id="prj_4" alt="Project">
+                        <caption>Project 4</caption>
+                        <img src="images/pexels-bri-schneiter-28802-346529.jpg" class="box_example-projects_slides_image" id="prj_5" alt="Project">
+                        <caption>Project 5</caption>
+                    </section>
+                </section>
+            </section>
+            
+            
+
+    </section>
+    <footer>
+            
+            <nav aria-label="Footer navigation">
+                <p>
+                © 2026 Wori Emmanuel
+            </p>
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="about.html">
+                    About
+                </a>
+                <a href="data.html">
+                    Skills
+                </a>
+                <a href="gallery.html">
+                    Gallery
+                </a>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </nav>
+        </footer>
+</main>
+</body>
+</html>
+    <!--End of Screen1/page3-->

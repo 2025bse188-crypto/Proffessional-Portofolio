@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio sitemap and wireframes</title>
+<style>
+:root{--bg:#f6f8fb;--dot:#d5dbe5;--card:#fff;--ink:#1f2a3d;--mute:#5d6b82;--line:#2f6fed;--tint:#e8f0fe;--ph:#e9edf3;--ph2:#cfd6e2;--ok:#1c9b6c;--note:#fff8d6;--noteb:#e6c84a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151f;--dot:#26304a;--card:#182033;--ink:#e8edf7;--mute:#9aa8c2;--line:#6b9bff;--tint:#1e2d54;--ph:#24304a;--ph2:#34425f;--note:#3a3515;--noteb:#8a7a22}}
+:root[data-theme="dark"]{--bg:#10151f;--dot:#26304a;--card:#182033;--ink:#e8edf7;--mute:#9aa8c2;--line:#6b9bff;--tint:#1e2d54;--ph:#24304a;--ph2:#34425f;--note:#3a3515;--noteb:#8a7a22}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);background-image:radial-gradient(var(--dot) 1px,transparent 1px);background-size:20px 20px;color:var(--ink);font:15px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif}
+main{max-width:1080px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:28px;margin:0 0 4px}h2{font-size:19px;margin:44px 0 4px}
+.sub{color:var(--mute);margin:0 0 18px;max-width:62ch}
+.box{background:var(--card);border:2px solid var(--line);border-radius:10px;padding:10px 14px}
+.tree{display:flex;flex-direction:column;align-items:center;gap:0;overflow-x:auto;padding:6px 0 14px}
+.node{min-width:140px;text-align:center;font-weight:600}
+.node small{display:block;font-weight:400;color:var(--mute);font-size:12px}
+.node.home{background:var(--line);color:#fff;border-color:var(--line)}.node.home small{color:#e5ecff}
+.stem{width:2px;height:22px;background:var(--line)}
+.row{display:flex;gap:14px;position:relative;padding-top:22px}
+.row:before{content:"";position:absolute;top:0;left:calc(10% + 2px);right:calc(10% + 2px);height:2px;background:var(--line)}
+.row .col{display:flex;flex-direction:column;align-items:center;position:relative}
+.row .col:before{content:"";position:absolute;top:-22px;width:2px;height:22px;background:var(--line)}
+.nav{margin-top:18px;border:2px dashed var(--line);border-radius:10px;padding:10px 14px;background:var(--tint);text-align:center;font-size:14px}
+.journey{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+.pill{background:var(--card);border:2px solid var(--line);border-radius:999px;padding:3px 14px;font-size:13px;font-weight:600}
+.arrow{color:var(--line);font-weight:700}
+.page{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:20px;margin-top:14px;align-items:start}
+@media(max-width:760px){.page{grid-template-columns:1fr}.row{flex-wrap:wrap;justify-content:center}.row:before,.row .col:before{display:none}.row{padding-top:10px}}
+.frame{background:var(--card);border:2px solid var(--line);border-radius:12px;overflow:hidden}
+.url{background:var(--tint);border-bottom:2px solid var(--line);padding:6px 12px;font-size:12px;color:var(--mute);display:flex;gap:6px;align-items:center}
+.dots i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--ph2);margin-right:3px}
+.body{padding:12px;display:flex;flex-direction:column;gap:10px}
+.nv{display:flex;justify-content:space-between;align-items:center;background:var(--ph);border-radius:6px;padding:7px 10px;font-size:12px;gap:8px;flex-wrap:wrap}
+.nv b{font-size:13px}.nv span{color:var(--mute)}
+.ft{background:var(--ph);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--mute);text-align:center}
+.blk{border:1.5px dashed var(--ph2);border-radius:8px;padding:9px 11px;font-size:13px}
+.blk>em{display:block;font-style:normal;font-size:11px;color:var(--mute);margin-bottom:4px}
+.img{background:var(--ph);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:12px;min-height:60px;position:relative}
+.img.v:after{content:"";border-left:16px solid var(--mute);border-top:10px solid transparent;border-bottom:10px solid transparent;position:absolute;opacity:.5}
+.ic{display:flex;gap:6px;flex-wrap:wrap}.ic span{background:var(--ph);border-radius:6px;padding:4px 8px;font-size:12px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hero{display:flex;gap:12px;align-items:center}.av{width:54px;height:54px;border-radius:50%;background:var(--ph2);flex:none}
+.bar{height:9px;background:var(--ph);border-radius:5px;overflow:hidden;flex:1}.bar i{display:block;height:100%;background:var(--line)}
+.sk{display:grid;grid-template-columns:78px 40px 1fr;gap:8px;align-items:center;font-size:13px;padding:3px 0}
+.fld{border:1.5px solid var(--ph2);border-radius:6px;padding:6px 10px;color:var(--mute);font-size:12px;margin-bottom:6px}
+.btn{background:var(--line);color:#fff;border-radius:6px;text-align:center;padding:7px;font-weight:600;font-size:13px}
+.notes{display:flex;flex-direction:column;gap:10px}
+.sticky{background:var(--note);border:1.5px solid var(--noteb);border-radius:4px;padding:10px 12px;font-size:13.5px;box-shadow:2px 3px 0 rgba(0,0,0,.08)}
+.sticky b{display:block;margin-bottom:2px}
+.sticky.tip{border-style:dashed}
+.tl{border-left:3px solid var(--line);padding-left:10px;margin:2px 0 2px 4px;font-size:13px}
+:focus-visible{outline:3px solid var(--line);outline-offset:2px}
+
+.sk1{background:var(--ph);border-radius:4px;height:9px}
+.sk1.s{width:60%}.sk1.m{width:80%}.sk1.h{height:16px;width:45%;background:var(--ph2)}
+.pc{width:100%;height:100%}
+.cir{width:54px;height:54px;border-radius:50%;background:var(--ph2);flex:none}
+.sqr{background:var(--ph);border-radius:6px;position:relative;overflow:hidden;min-height:64px}
+.sqr:before,.sqr:after{content:"";position:absolute;left:-10%;right:-10%;top:50%;height:1.5px;background:var(--ph2);transform:rotate(var(--r,28deg))}
+.sqr:after{--r:-28deg;transform:rotate(-28deg)}
+.sqr.v:before,.sqr.v:after{display:none}
+.sqr.v i{position:absolute;left:50%;top:50%;margin:-12px 0 0 -9px;border-left:18px solid var(--ph2);border-top:12px solid transparent;border-bottom:12px solid transparent}
+.pill2{display:inline-block;width:46px;height:14px;border-radius:7px;background:var(--ph2)}
+.nvp{display:flex;justify-content:space-between;align-items:center;background:var(--ph);border-radius:6px;padding:8px 10px}
+.nvp .l{width:60px;height:14px;border-radius:4px;background:var(--ph2)}.nvp .r{display:flex;gap:6px}
+.fp{background:var(--ph);border-radius:6px;padding:9px;display:flex;justify-content:center;gap:6px}
+.fp .sk1{width:36px;height:7px;background:var(--ph2)}
+.bp{height:28px;border-radius:6px;background:var(--ph2)}
+.fl{height:28px;border:1.5px solid var(--ph2);border-radius:6px;margin-bottom:6px}
+.ib{display:flex;gap:6px;flex-wrap:wrap}.ib i{width:30px;height:30px;border-radius:7px;background:var(--ph)}
+.tb{display:flex;align-items:center;gap:8px;padding:5px 0}.tb .bar{height:9px}
+.dotp{width:11px;height:11px;border-radius:50%;background:var(--ph2);flex:none}
+
+/* highlighted placeholders */
+:root{--hl:#cfe0ff;--hlb:#2f6fed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--hl:#2a4584;--hlb:#6b9bff}}
+:root[data-theme="dark"]{--hl:#2a4584;--hlb:#6b9bff}
+.sk1,.cir,.sqr,.pill2,.nvp .l,.fp .sk1,.bp,.ib i,.dotp,.bar{background:var(--hl);outline:1.5px solid var(--hlb);outline-offset:-1.5px}
+.sk1.h{background:var(--hlb);outline:none;opacity:.55}
+.bar i{background:var(--hlb);outline:none}
+.fl{border:1.5px solid var(--hlb);background:var(--tint)}
+.bp{background:var(--hlb);outline:none;opacity:.7}
+.sqr:before,.sqr:after{background:var(--hlb);opacity:.5}
+.sqr.v i{border-left-color:var(--hlb)}
+.nvp,.fp{background:var(--tint)}
+.blk{border-color:var(--hlb)}
+
+.r{display:flex;align-items:center;gap:8px;margin:4px 0}.pl{flex:1;min-width:0}
+.tg{flex:none;width:88px;font-size:11px;font-weight:600;color:var(--line);line-height:1.2}
+@media(max-width:520px){.tg{width:64px;font-size:10px}}
+</style></head>
+<body><main>
+<h1>Portfolio site: sitemap and wireframes</h1>
+<h2 style="margin-top:22px">Sitemap</h2>
+<div class="tree">
+<svg viewBox="0 0 720 250" width="100%" style="max-width:760px" role="img" aria-label="Sitemap: Home links to About, Skills, Gallery and Contact" font-family="Segoe UI,system-ui,sans-serif">
+ <g stroke="var(--line)" stroke-width="2" fill="none"><path d="M360 78V112M90 112H630M90 112V150M270 112V150M450 112V150M630 112V150"/></g>
+ <rect x="285" y="24" width="150" height="54" rx="10" fill="var(--line)" stroke="var(--line)" stroke-width="2"/>
+ <text x="360" y="48" text-anchor="middle" font-size="16" font-weight="600" fill="#fff">Home</text>
+ <g fill="var(--card)" stroke="var(--line)" stroke-width="2">
+  <rect x="20" y="150" width="140" height="54" rx="10"/><rect x="200" y="150" width="140" height="54" rx="10"/>
+  <rect x="380" y="150" width="140" height="54" rx="10"/><rect x="560" y="150" width="140" height="54" rx="10"/></g>
+ <g font-size="16" font-weight="600" fill="var(--ink)" text-anchor="middle">
+  <text x="90" y="182">About</text><text x="270" y="182">Skills</text><text x="450" y="182">Gallery</text><text x="630" y="182">Contact</text></g>
+ <g font-size="12" fill="var(--mute)" text-anchor="middle">
+  <text x="360" y="68" fill="#e5ecff">index.html</text>
+  <text x="90" y="224">About.html</text><text x="270" y="224">data.html</text><text x="450" y="224">gallery.html</text><text x="630" y="224">contact.html</text></g>
+</svg></div>
+<div class="nav"><b>Shared on every page:</b> top menu (Home, About, Skills, Gallery, Contact) and a footer with the same links.</div>
+<div class="journey"><b>The visitor's path:</b>
+ <span class="pill">Home: who is this?</span><span class="arrow">&rarr;</span>
+ <span class="pill">About + Skills: can they do it?</span><span class="arrow">&rarr;</span>
+ <span class="pill">Gallery: show me</span><span class="arrow">&rarr;</span>
+ <span class="pill">Contact: let's talk</span></div>
+
+<h2>1. Home</h2>
+<p class="sub">index.html: the first impression.</p>
+<div class="page">
+ <div class="frame"><div class="url"><span class="dots"><i></i><i></i><i></i></span> index.html</div><div class="body"><div class="r"><div class="pl"><div class="nvp"><div class="l"></div><div class="r" style="margin:0;gap:6px;flex:none"><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span></div></div></div><span class="tg">← Menu bar</span></div><div class="blk"><em>Intro / hero</em><div class="r"><div class="pl"><div class="cir"></div></div><span class="tg">← Portrait or logo</span></div><div class="r"><div class="pl"><div class="sk1 h"></div></div><span class="tg">← Your name</span></div><div class="r"><div class="pl"><div class="sk1 m" style="margin:5px 0"></div></div><span class="tg">← Job title</span></div></div><div class="blk"><em>Vision</em><div class="r"><div class="pl"><div class="sk1 m" style="margin:5px 0"></div><div class="sk1 s" style="margin:5px 0"></div></div><span class="tg">← Vision statement</span></div></div><div class="blk"><em>Qualifications</em><div class="r"><div class="pl"><div class="two"><div class="sqr"></div><div class="sqr"></div><div class="sqr"></div><div class="sqr"></div></div></div><span class="tg">← Four certificate cards</span></div></div><div class="blk"><em>Technology icons</em><div class="r"><div class="pl"><div class="ib"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="tg">← Tool icons</span></div></div><div class="r"><div class="pl"><div class="fp"><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div></div></div><span class="tg">← Footer links</span></div></div></div>
+ <div class="notes">
+  <div class="sticky"><b>What it's for</b>Say who you are in a few seconds, then point people toward the rest of the portfolio.</div>
+  <div class="sticky"><b>Intro</b>A portrait or logo sits beside your name and what you do.</div>
+  <div class="sticky"><b>Vision and qualifications</b>One short line about where you're headed, backed by four certificates.</div>
+  <div class="sticky tip"><b>Next step for visitors</b>Use the top menu to explore.</div>
+ </div>
+</div>
+
+<h2>2. About</h2>
+<p class="sub">About.html: your background and the projects you've worked on.</p>
+<div class="page">
+ <div class="frame"><div class="url"><span class="dots"><i></i><i></i><i></i></span> About.html</div><div class="body"><div class="r"><div class="pl"><div class="nvp"><div class="l"></div><div class="r" style="margin:0;gap:6px;flex:none"><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span></div></div></div><span class="tg">← Menu bar</span></div><div class="r"><div class="pl"><div class="sk1 h"></div></div><span class="tg">← Page title</span></div><div class="two" style="grid-template-columns:1.6fr 1fr;align-items:start"><div class="blk"><em>Timeline</em><div class="r"><div class="pl"><div class="tl"><div class="sk1 m" style="margin:5px 0"></div><div class="sk1 s" style="margin:5px 0"></div></div></div><span class="tg">← Certificate + blurb</span></div><div class="r"><div class="pl"><div class="tl"><div class="sk1 m" style="margin:5px 0"></div><div class="sk1 s" style="margin:5px 0"></div></div></div><span class="tg"></span></div><div class="r"><div class="pl"><div class="tl"><div class="sk1 m" style="margin:5px 0"></div><div class="sk1 s" style="margin:5px 0"></div></div></div><span class="tg"></span></div><div class="r"><div class="pl"><div class="tl"><div class="sk1 m" style="margin:5px 0"></div><div class="sk1 s" style="margin:5px 0"></div></div></div><span class="tg"></span></div></div><div class="blk"><em>Projects</em><div class="r"><div class="pl"><div class="tb"><span class="dotp"></span><div class="sk1 m" style="flex:1"></div></div></div><span class="tg">← Project name</span></div><div class="r"><div class="pl"><div class="tb"><span class="dotp"></span><div class="sk1 m" style="flex:1"></div></div></div><span class="tg"></span></div><div class="r"><div class="pl"><div class="tb"><span class="dotp"></span><div class="sk1 m" style="flex:1"></div></div></div><span class="tg"></span></div><div class="r"><div class="pl"><div class="tb"><span class="dotp"></span><div class="sk1 m" style="flex:1"></div></div></div><span class="tg"></span></div></div></div><div class="r"><div class="pl"><div class="fp"><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div></div></div><span class="tg">← Footer links</span></div></div></div>
+ <div class="notes">
+  <div class="sticky"><b>What it's for</b>Build trust. Show where you've learned and what you've built.</div>
+  <div class="sticky"><b>Timeline</b>Four certificates stacked in order, each with a line or two of context.</div>
+  <div class="sticky"><b>Projects list</b>Four project names in a slim column beside the timeline.</div>
+  <div class="sticky tip"><b>On a phone</b>Everything stacks into a single column.</div>
+ </div>
+</div>
+
+<h2>3. Skills</h2>
+<p class="sub">data.html: what you know and how confident you are in it.</p>
+<div class="page">
+ <div class="frame"><div class="url"><span class="dots"><i></i><i></i><i></i></span> data.html</div><div class="body"><div class="r"><div class="pl"><div class="nvp"><div class="l"></div><div class="r" style="margin:0;gap:6px;flex:none"><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span></div></div></div><span class="tg">← Menu bar</span></div><div class="r"><div class="pl"><div class="sk1 h"></div></div><span class="tg">← Page title</span></div><div class="blk"><em>Icon row</em><div class="r"><div class="pl"><div class="ib"><i></i><i></i><i></i><i></i><i></i></div></div><span class="tg">← Tool icons</span></div></div><div class="blk"><em>Proficiency table</em><div class="r"><div class="pl"><div class="tb"><div class="sk1" style="width:70px"></div><div class="bar"><i style="width:100%"></i></div></div></div><span class="tg">← Skill + level bar</span></div><div class="r"><div class="pl"><div class="tb"><div class="sk1" style="width:70px"></div><div class="bar"><i style="width:75%"></i></div></div></div><span class="tg"></span></div><div class="r"><div class="pl"><div class="tb"><div class="sk1" style="width:70px"></div><div class="bar"><i style="width:50%"></i></div></div></div><span class="tg"></span></div><div class="r"><div class="pl"><div class="tb"><div class="sk1" style="width:70px"></div><div class="bar"><i style="width:50%"></i></div></div></div><span class="tg"></span></div><div class="r"><div class="pl"><div class="tb"><div class="sk1" style="width:70px"></div><div class="bar"><i style="width:50%"></i></div></div></div><span class="tg"></span></div></div><div class="r"><div class="pl"><div class="fp"><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div></div></div><span class="tg">← Footer links</span></div></div></div>
+ <div class="notes">
+  <div class="sticky"><b>What it's for</b>Show the range of what you can do and where you're strongest.</div>
+  <div class="sticky"><b>Icon row</b>HTML, CSS, JavaScript, Git and SQL at a glance.</div>
+  <div class="sticky"><b>Proficiency table</b>Each skill gets a percentage and a matching bar. These are your own ratings.</div>
+ </div>
+</div>
+
+<h2>4. Gallery</h2>
+<p class="sub">gallery.html: a quick visual tour of your work.</p>
+<div class="page">
+ <div class="frame"><div class="url"><span class="dots"><i></i><i></i><i></i></span> gallery.html</div><div class="body"><div class="r"><div class="pl"><div class="nvp"><div class="l"></div><div class="r" style="margin:0;gap:6px;flex:none"><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span></div></div></div><span class="tg">← Menu bar</span></div><div class="r"><div class="pl"><div class="sk1 h"></div></div><span class="tg">← Page title</span></div><div class="r"><div class="pl"><div class="sqr v" style="min-height:110px"><i></i></div></div><span class="tg">← Featured video</span></div><div class="r"><div class="pl"><div class="sk1 s" style="margin:5px 0"></div></div><span class="tg">← Caption</span></div><div class="r"><div class="pl"><div class="two"><div><div class="sqr"></div><div class="sk1 s" style="margin:5px 0"></div></div><div><div class="sqr"></div><div class="sk1 s" style="margin:5px 0"></div></div><div><div class="sqr"></div><div class="sk1 s" style="margin:5px 0"></div></div><div><div class="sqr"></div><div class="sk1 s" style="margin:5px 0"></div></div></div></div><span class="tg">← Four images + captions</span></div><div class="r"><div class="pl"><div class="fp"><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div></div></div><span class="tg">← Footer links</span></div></div></div>
+ <div class="notes">
+  <div class="sticky"><b>What it's for</b>Let people skim your work without reading a thing.</div>
+  <div class="sticky"><b>Featured project</b>One big video leads the page.</div>
+  <div class="sticky"><b>Supporting grid</b>Four images in two columns, each with a short caption.</div>
+ </div>
+</div>
+
+<h2>5. Contact</h2>
+<p class="sub">contact.html: the easiest ways to reach you.</p>
+<div class="page">
+ <div class="frame"><div class="url"><span class="dots"><i></i><i></i><i></i></span> contact.html</div><div class="body"><div class="r"><div class="pl"><div class="nvp"><div class="l"></div><div class="r" style="margin:0;gap:6px;flex:none"><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span><span class="pill2"></span></div></div></div><span class="tg">← Menu bar</span></div><div class="blk"><em>Social links</em><div class="r"><div class="pl"><div class="ib"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="tg">← Social icons</span></div></div><div class="blk"><em>Contact form</em><div class="r"><div class="pl"><div class="sk1 h"></div></div><span class="tg">← Form heading</span></div><div class="r"><div class="pl"><div class="fl"></div></div><span class="tg">← Name field</span></div><div class="r"><div class="pl"><div class="fl"></div></div><span class="tg">← Email field</span></div><div class="r"><div class="pl"><div class="fl"></div></div><span class="tg">← Phone field</span></div><div class="r"><div class="pl"><div class="fl" style="height:58px"></div></div><span class="tg">← Message box</span></div><div class="r"><div class="pl"><div class="bp"></div></div><span class="tg">← Submit button</span></div></div><div class="r"><div class="pl"><div class="fp"><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div><div class="sk1"></div></div></div><span class="tg">← Footer links</span></div></div></div>
+ <div class="notes">
+  <div class="sticky"><b>What it's for</b>Make it simple to get in touch, by social link or by form.</div>
+  <div class="sticky"><b>Social links</b>Six icons split into two groups.</div>
+  <div class="sticky"><b>Form</b>Name, email, phone and a message, then a submit button.</div>
+  <div class="sticky tip"><b>Worth improving later</b>The live page has no visible field labels and gives no confirmation after sending. That isn't drawn here, since this wireframe matches what exists today.</div>
+ </div>
+</div>
+</main></body></html>

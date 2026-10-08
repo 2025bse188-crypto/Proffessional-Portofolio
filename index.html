@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>WorinRmmanuel | Home</title>
+   <style>
+    /* PAGE 1 CONTENT */
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: wheat;
+    }
+
+    main {
+        flex: 1;
+        overflow-x: hidden;
+        /* Prevents side-scrolling on mobile */
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: clamp(24px, 5vw, 50px);
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .nav > section:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .aboutmem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+        row-gap: 16px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .aboutmem > section {
+        flex: 0 1 auto;
+        max-width: 100%;
+    }
+
+    .imge {
+        width: clamp(120px, 25vw, 180px);
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #about_me {
+        text-align: start;
+        max-width: 600px;
+    }
+
+    .box_qualification {
+        display: flex;
+        justify-content: center;
+        column-gap: clamp(20px, 5vw, 50px);
+        row-gap: 24px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #vision {
+        padding: 20px;
+        border-right: 10px solid white;
+        max-width: min(300px, 100%);
+    }
+
+    #qualification {
+        max-width: 100%;
+    }
+
+    .box_page1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: url(images/t.jpg);
+        background-size: cover;
+        min-height: 70vh;
+        min-width: 100%;
+        padding: 20px 5%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .button{
+        padding: clamp(7px, 1.2vw, 10px) clamp(14px, 3vw, 30px);
+        border-radius: 30px;
+        font-size: clamp(13px, 2vw, 16px);
+        font-weight: bold;
+        border-width: 1px;
+        color: black;
+    }
+
+    #box_skill_icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: clamp(8px, 2vw, 20px);
+        margin-top: clamp(40px, 8vw, 80px);
+        margin-bottom: clamp(-140px, calc(20px - 10vw), 0px);
+    }
+
+    #box_skill_icons img {
+        height: clamp(44px, 8vw, 80px);
+        margin: clamp(4px, 1vw, 10px);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 0 2.5% 12px;
+        padding: 10px 16px;
+        font-size: 0.8rem;
+        height: 10px;
+    }
+
+    footer p {
+        margin: 0;
+        color:black;
+    }
+
+    footer nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    footer nav a {
+        color:black;
+        text-decoration: none;
+    }
+
+   </style>
+
+    <title>Wori Emmanuel | Home</title>
+</head>
+
+<!-- Keep all visible page content inside the document body. -->
+<body>
+<main>
+    <!--start of Screen1/page1-->
+    <section class="box_page1" id="page1">
+        <section class="nav">
+            <section class="port">
+                <p>Portofolio</p>
+            </section>
+            <section>
+                <a href="index.html"><button class="button">Home</button></a>
+                <a href="About.html"><button class="button">About</button></a>
+                <a href="data.html"><button class="button">Skills</button></a>
+                <a href="gallery.html"><button class="button">Gallery</button></a>
+                <a href="contact.html"><button class="button">Contact</button></a>
+            </section>
+        </section>
+        <section class="aboutmem">
+            <img class="imge" src="images/logo.png">
+            <section>
+                <H1 class="paragraph" id="about_me">
+                    Wori Emmanuel<br> Pro FrontEnd web developer and cybersecurity Enthusiast
+                </h1>
+
+            </section>
+        </section>
+        <section class="box_qualification">
+            <section class="paragraph" id="vision">
+                <p>Vision<br>To revolutionize society by inspiring greatness
+                </p>
+            </section>
+            <section class="paragraph" id="qualification">
+                <p>Professional certificate in web development</p>
+                <p>Professional certificate in Software Engineering</p>
+                <p>Certificate in advanced React concepts</p>
+                <p>Certificate in Ai web development</p>
+            </section>
+
+        </section>
+         <section id="box_skill_icons">
+            <img src="icons/html-icon.png" alt="html">
+            <img src="icons/css-icon.png" alt="css">
+            <img src="icons/javascript-programming-language-icon.png">
+            <img src="icons/react-js-icon.png" alt="react">
+            <img src="icons/mongodb" alt="mongodb">
+            <img src="icons/aws.png" alt="aws">
+            <img src="icons/python-programming-language-icon.png" alt="python">
+
+             <footer>
+        <p>© 2026 Wori Emmanuel</p>
+        <nav aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="data.html">Skills</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+        </section>
+
+    </section>
+
+   
+    <!--End of Screen1/page1-->
+
+</main>
+</body>
+</html>
